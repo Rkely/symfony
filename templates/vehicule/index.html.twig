@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello VehiculeController!{% endblock %}
+
+{% block body %}
+
+	<p>je suis le controller des animaux</p>
+	<a href="{{ path('show') }}">va</a>
+	{% if age  > 15 %}
+		<p>tu est age</p>
+	{% else %}
+	    <p>tu est petit</p>
+	{% endif %}
+{% endblock %}
+
+
